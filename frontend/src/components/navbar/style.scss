@@ -1,0 +1,50 @@
+nav {
+    width: 100%;
+    top: 0;
+
+    .nav {
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: 400;
+
+        ul {
+            display: flex;
+            gap: 50px;
+
+            a {
+                color: gray;
+            }
+
+            li:hover a {
+                color: #394aea;
+            }
+        }
+
+        .store {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+
+            a {
+                color: black;
+            }
+
+            button {
+                padding: 10px 30px;
+                text-transform: capitalize;
+                border: 1px solid lightgray;
+                border-radius: 25px;
+                background-color: white;
+                color: black;
+            }
+        }
+
+    }
+}
+
+a {
+    color: white;
+}
