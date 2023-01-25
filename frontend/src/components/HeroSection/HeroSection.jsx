@@ -1,19 +1,17 @@
 import React from 'react'
 import "./style.scss"
-import img from "../../assets/images/versace.webp"
 function HeroSection() {
   return (
-    <section >
+    <section className='hero_section' >
       <div className="container">
-
-        <div className="hero_section">
-          <img src={img} alt="product" />
-          <div className='hero_section'>
-            <div className='hero_section_right_info'>
-              <h2 style={{ color: "black" }}>Shop is fun</h2>
-              <h1 style={{ color: "black", fontWeight: "800" }}>BROWSE OUR PREMIUM PRODUCT</h1>
-              <p style={{ color: "black" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, totam? Ad, maiores quidem omnis molestias quasi tempora sed veniam sunt odit ut atque natus debitis illo magni repellat consequuntur itaque exercitationem quis enim? Nostrum facere libero, dolore dolorum voluptas tempore?</p>
-            </div>
+        <div className="hero_section_wrapper">
+          <img src="https://preview.colorlib.com/theme/aroma/img/home/hero-banner.png" alt="heroImage" />
+          <div className='hero_section_wrapper_info'>
+            <h2>Shop is fun</h2>
+            <h1>BROWSE OUR PREMIUM PRODUCT</h1>
+            <p>Us which over of signs divide dominion deep fill bring they're meat beho upon own earth without morning over third. Their male dry. They are great appear whose land fly grass.
+              Browse Now</p>
+            <button>Browse Now</button>
           </div>
         </div>
       </div>

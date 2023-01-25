@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import LatestNews from '../components/LatestNews/LatestNews';
 import BestSellers from '../components/BestSellers/BestSellers';
 import TrendingProducts from "../components/TrendingProducts/TrendingProducts"
+import WinterSale from "../components/WinterSale/WinterSale"
 
 function Home() {
   return (
@@ -11,9 +12,10 @@ function Home() {
         <title>Home Page!</title>
         <meta name='description' content='Beginner friendly page for learning React Helmet.' />
       </Helmet>
-      <TrendingProducts/>
-      <BestSellers/>
-      <LatestNews/>
+      <TrendingProducts />
+      <WinterSale />
+      <BestSellers />
+      <LatestNews />
     </div>
   )
 }

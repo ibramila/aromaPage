@@ -25,4 +25,12 @@ code {
   margin: 0 auto;
 }
 
-body {}
+p {
+  color: #555555;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}

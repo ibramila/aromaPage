@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async';
-
+import AddSection from "../components/AddSection/AddSection"
 function Add() {
     return (
         <div>
@@ -8,7 +8,7 @@ function Add() {
                 <title>Add Page</title>
                 <meta name='description' content='Beginner friendly page for learning React Helmet.' />
             </Helmet>
-            Add
+            <AddSection />
         </div>
     )
 }

@@ -1,7 +1,41 @@
-.hero_section{
-    
-    &_left{
-        width: 30%;
-        // background-color: #394AEA;
+.hero_section {
+    padding: 50px 0;
+
+    .hero_section_wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        align-items: center;
+
+        img {
+            width: 40%;
+        }
+
+        &_info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: black;
+
+            h2 {
+                font-size: 30px;
+                color: #555555;
+            }
+
+            h1 {
+                font-size: 50px;
+            }
+
+            button {
+                width: 30%;
+                background-color: #384aeb;
+                border-radius: 30px;
+                border: 1px solid #384aeb;
+                color: white;
+                font-weight: 500;
+                padding: 20px 30px;
+                font-size: 20px;
+            }
+        }
     }
 }

@@ -1,0 +1,47 @@
+.winter_sale {
+    background-image: url("https://preview.colorlib.com/theme/aroma/img/home/parallax-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: flex-start;
+        justify-content: center;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                font-size: 50px;
+            }
+
+            span {
+                font-size: 30px;
+            }
+
+            p {
+                color: #555555;
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+            button {
+                padding: 10px 30px;
+                border: 1px solid #384aeb;
+                color: white;
+                background-color: #384aeb;
+                border-radius: 20px;
+                font-size: 20px;
+            }
+        }
+    }
+}
