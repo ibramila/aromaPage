@@ -76,10 +76,22 @@ app.get("/products/:id", (req, res) => {
     })
 })
 
+// app.post("/products", async (req, res) => {
+//     const product = req.body
+//     try {
+//         await Products.create(product)
+//         res.status(200).json({
+//             message: "success"
+//         })
+//     } catch (error) {
+//         console.log(error);
+//     }
+// })
+
 app.post("/products", async (req, res) => {
-    const user = req.body
+    const products = req.body
     try {
-        await Products.create(user)
+        await Products.create(products)
         res.status(200).json({
             message: "success"
         })

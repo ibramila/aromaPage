@@ -1,6 +1,7 @@
 import React from 'react'
 import "./style.scss"
 function BestSellers() {
+
   return (
     <section className='sellers_section'>
       <div className="container">
@@ -8,9 +9,12 @@ function BestSellers() {
           <div className="intro">
             <span>Popular Item in the market</span>
             <h1>Best Sellers</h1>
+            
             <div style={{ backgroundColor: "#394AEA", width: "20%", height: "1px", border: "1px solid blue" }}></div>
+
           </div>
           <ul className='cards'>
+            
             <li className='card'>
               <img src="https://preview.colorlib.com/theme/aroma/img/product/product1.png" alt="product1" />
               <p>Accessories</p>
