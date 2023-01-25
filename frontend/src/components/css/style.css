@@ -1,0 +1,48 @@
+.winter_sale {
+  background-image: url("https://preview.colorlib.com/theme/aroma/img/home/parallax-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+}
+.winter_sale .info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.winter_sale .info div {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+.winter_sale .info div h1 {
+  font-size: 50px;
+}
+.winter_sale .info div span {
+  font-size: 30px;
+}
+.winter_sale .info div p {
+  color: #555555;
+  font-size: 15px;
+  font-weight: 400;
+}
+.winter_sale .info div button {
+  padding: 10px 30px;
+  border: 1px solid #384aeb;
+  color: white;
+  background-color: #384aeb;
+  border-radius: 20px;
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */rds .card h3 {
+  color: gray;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */ck;
+  cursor: pointer;
+}
+.latest_news .news_wrapper ul li button:hover {
+  color: blue;
+}/*# sourceMappingURL=style.css.map */

@@ -7,6 +7,7 @@ function TrendingProducts() {
   const URL = axios.create({
     baseURL: "http://localhost:3050"
   });
+
   const [posts, setPosts] = useState([]);
   const [sorted, setSorted] = useState({
     sorted: "value", reversed: false
@@ -26,6 +27,11 @@ function TrendingProducts() {
   }
   const handleChange = (e) => {
     setValue(e.target.value)
+  }
+  const handleDelete = async (id) => {
+    await axios.delete(`http://www.localhost:3050/products/${id}`);
+    console.log("data is deleted")
+    console.log(id)
   }
 
   useEffect(() => {
@@ -55,6 +61,17 @@ function TrendingProducts() {
             </div>
           </div>
           <ul className='cards'>
+            {
+              posts?.map(({ _id, category, image, name, price }) => (
+                <li className='card' key={_id}>
+                  <img src={image} alt="product1" />
+                  <p>{category}</p>
+                  <h6>{name}</h6>
+                  <h3>${price}</h3>
+                  <button className='delete-btn' onClick={() => handleDelete(_id)}>DELETE</button>
+                </li>
+              ))
+            }
             {posts
               .filter(product => {
                 return value.trim().toLowerCase() === "" ? product : product.name.toLowerCase().includes(value.toLowerCase())
@@ -66,6 +83,7 @@ function TrendingProducts() {
                     <p>{post.category}</p>
                     <h6>{post.name}</h6>
                     <h3>${post.price}</h3>
+                    <button onClick={(_id) => handleDelete(_id)}>delete</button>
                   </li>
                 );
               })}
